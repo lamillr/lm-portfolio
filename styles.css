@@ -31,33 +31,34 @@ a {
 
 /* Navigation */
 nav > div {
+  font-family: 'Gilda Display', serif;
   font-size: 2.5rem;
-  min-height: 60px;
+  min-height: 80px;
   font-weight: bold;
 }
 
 .nav-projects, .contact {
   padding: 1.5rem 4rem;
-  margin: 1rem 4rem;
+  margin: 2rem 4rem;
 }
 
 .logo {
   font-size: 3.5rem;
   padding: 1rem 4rem;
-  margin: 1rem 2rem;
+  margin: 2rem 2rem;
 }
 
 nav {
   display: grid;
   justify-items: center;
   text-align: center;
-  background-color: #EBEDEF;
+  background-color: #B2BABB;
 }
 
 hr {
   width: 100vw;
   height: 2px;
-  background-color: #CFCFCF;
+  background-color:#EBEDEF;
   border: none;
   margin: 0;
 }
@@ -164,11 +165,18 @@ hr {
 Project Grid & Cards
 */
 .projects {
-  margin: 8rem 5rem;
+  margin: 5rem 10rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-gap: 6rem;
+  grid-gap: 5rem;
   
+}
+
+@media (max-width: 35rem) {
+  .projects {
+    margin: 2rem
+  }
+ 
 }
 
 .project {
@@ -184,6 +192,7 @@ Project Grid & Cards
   grid-row: 1/1;
   grid-column: 1/-1;
   font-size: 2rem;
+  font-family: "Gilda Display", serif;
   margin: 1rem 1rem;
 
 }
@@ -237,7 +246,8 @@ Project Grid & Cards
 /*Footer*/
 
 footer {
-  background: #A9A9A9;
+  font-family: 'Gilda Display', serif;
+  background: #B2BABB;
   color: 	#000000;
   padding: 4rem 0;
   display: grid;
@@ -258,11 +268,18 @@ i {
 }
 
 
-.footer_built, .copy {
+.footer_built {
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     margin-top:1rem;
     white-space: pre;
+}
+
+.copy {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  margin-top:1rem;
+  white-space: pre;
 }
 
 /*@media (min-width: 30rem) {

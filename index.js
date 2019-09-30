@@ -1,10 +1,19 @@
 // Scroll to a certain element
 //projects
+const projectScroll = document.getElementById("projects-start")
 
-document.getElementById('projects-start').scrollIntoView({ 
-    behavior: 'smooth' 
+const footerScroll = document.getElementById('footer-start')
+
+projectScroll.addEventListener("click", function (){
+  projectScroll.scrollIntoView({ 
+    behavior: 'smooth',
   });
 
-document.getElementById('footer-start').scrollIntoView({ 
-    behavior: 'smooth' 
+});
+
+
+footerScroll.addEventListener("click", function() {
+  footerScroll.scrollIntoView({ 
+    behavior: 'smooth',
   });
+});
